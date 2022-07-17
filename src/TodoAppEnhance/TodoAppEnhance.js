@@ -4,7 +4,10 @@ import TodoList from './TodoList'
 class TodoApp extends React.Component {
   constructor(props) {
     super(props)
-    // To do: initial state here
+    this.state = {
+      items: [],
+      text: ''
+    }
   }
 
   handleChange = (e) => {
